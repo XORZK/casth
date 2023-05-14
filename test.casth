@@ -1,0 +1,13 @@
+x = 2.1
+/* This is a comment. */
+var x
+var y
+var f = function(x, y) { sin(x) * sin(y) + x * y; }
+der(f, x)
+var g = function(x, y) { 2 * (x + der(f, y)); } /* der(f, y) is a  matrix */
+var r{3}; /* Vector of three elements */
+var J{12, 12}; /* Matrix of 12x12 elements */
+var dot = function(u{:}, v{:}) -> scalar {
+          return u[i] * v[i]; /* Einstein notation */
+}
+var norm = function(u{:}) -> scalar { return sqrt(dot(u, u)); }
